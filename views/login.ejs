@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("./partials/head") %>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <body>
+            <form class=" mt-5 d-flex justify-content-center align-items-center flex-column" action="/user/login" method="post">
+                <div class="mb-3">
+                    <label for="Email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="Email" aria-describedby="Email" name="Email">
+                  </div>
+                <div class="mb-3">
+                  <label for="Password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="Password" name="Password">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+</body>
+</html>
